@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1775437459 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/Ejercicios de repaso/main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1775437506 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/Ejercicios de repaso/funciones.c
+	"funciones.h"
+
+1775431228 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/Ejercicios de repaso/funciones.h
+	<stdio.h>
+	<string.h>
+

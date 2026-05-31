@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1776513762 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Pila dinamica/main.c
+	<stdio.h>
+	<stdlib.h>
+	"pila_dinamica.h"
+	"funciones.h"
+
+1776477215 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Pila dinamica/pila_dinamica.h
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+
+1776477469 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Pila dinamica/funciones.h
+
+1776513695 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Pila dinamica/funciones.c
+	"funciones.h"
+	"pila_dinamica.h"
+
+1776477640 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Pila dinamica/pila_dinamica.c
+	"pila_dinamica.h"
+

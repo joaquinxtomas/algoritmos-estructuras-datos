@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1776530968 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Cola/TDA Cola dinamica/cola_dinamica.c
+	"cola_dinamica.h"
+
+1776530988 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Cola/TDA Cola dinamica/cola_dinamica.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1776529756 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Cola/TDA Cola dinamica/funciones.c
+	"funciones.h"
+
+1776531691 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Cola/TDA Cola dinamica/funciones.h
+	<stdio.h>
+	<stdlib.h>
+	"cola_dinamica.h"
+
+1776531683 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Cola/TDA Cola dinamica/main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"cola_dinamica.h"
+

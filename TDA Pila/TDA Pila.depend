@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1775970470 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Pila/main.c
+	"pila.h"
+	"producto.h"
+	"funciones.h"
+
+1775970293 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Pila/estatica/pila.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1775965377 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Pila/producto/producto.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1775970281 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Pila/estatica/pila.c
+	"pila.h"
+
+1775968824 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Pila/producto/producto.c
+	"producto.h"
+
+1775962485 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Pila/funciones.c
+	"funciones.h"
+	"pila.h"
+	"producto.h"
+
+1775962427 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Pila/funciones.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pila.h"
+

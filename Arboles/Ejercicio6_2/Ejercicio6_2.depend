@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1780190957 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/Arboles/TDA_Arbol/arbol.c
+	"arbol.h"
+
+1780195607 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/Arboles/TDA_Arbol/arbol.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1780195411 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/Arboles/Ejercicio6_2/main.c
+	"funciones.h"
+
+1780195956 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/Arboles/Ejercicio6_2/funciones.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../TDA_Arbol/arbol.h"
+
+1780195980 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/Arboles/Ejercicio6_2/funciones.c
+	"funciones.h"
+

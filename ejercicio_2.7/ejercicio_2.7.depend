@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1777207472 source:c:\users\jtppa\onedrive\materias\segundo a—o\algoritmos y estructuras de datos\ejercicios\ejercicio_2.7\funciones.c
+	"pila.h"
+
+1777207243 
+
+1777208421 c:\users\jtppa\onedrive\materias\segundo a—o\algoritmos y estructuras de datos\ejercicios\ejercicio_2.7\pila.h
+	"funciones.h"
+
+1777208254 .h"
+
+1777208248 c:\users\jtppa\onedrive\materias\segundo a—o\algoritmos y estructuras de datos\ejercicios\ejercicio_2.7\funciones.h
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"pila.h"
+
+1777208254 source:c:\users\jtppa\onedrive\materias\segundo a—o\algoritmos y estructuras de datos\ejercicios\ejercicio_2.7\main.c
+	"funciones.h"
+
+1777207243 source:c:\users\jtppa\onedrive\materias\segundo a—o\algoritmos y estructuras de datos\ejercicios\ejercicio_2.7\pila.c
+	"pila.h"
+
+1777252369 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/ejercicio_2.7/funciones.c
+	"pila.h"
+
+1777208421 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/ejercicio_2.7/pila.h
+	"funciones.h"
+
+1777252385 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/ejercicio_2.7/funciones.h
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+
+1777208254 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/ejercicio_2.7/main.c
+	"funciones.h"
+
+1777249981 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/ejercicio_2.7/pila.c
+	"pila.h"
+
