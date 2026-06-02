@@ -33,4 +33,6 @@ void cargarArbolArchivo(tArbol* arbol, const char* filename);
 int compararLegajos(const void* dato1, const void* dato2);
 void mostrarIndiceEmpleadoArbol(void* info, unsigned tam, unsigned n, void* params);
 
+void agregarRegistro(const char* filename, tArbol* arbol, int(*cmp)(const void*, const void*));
+
 #endif // FUNCIONES_H_INCLUDED

@@ -35,6 +35,112 @@ void mostrarIndiceEmpleadoArbol(void* info, unsigned tam, unsigned n, void* para
     printf("Nivel %d: [%s] | %d\n", n, indice->legajo, indice->nroRegistro);
 }
 
+//agregar registros
+void agregarRegistro(const char* filename, tArbol* arbol, int(*cmp)(const void*, const void*)){
+    FILE* archivo = fopen(filename, "r+b");
+    if(!archivo){
+        printf("Error al abrir el archivo para agregar un registro.\n");
+        return;
+    }
+
+    tEmpleado nuevoEmp;
+
+    printf("Ingrese el legajo del empleado: ");
+    scanf("%s", &nuevoEmp.legajo);
+
+    printf("Ingrese el apellido y nombre del empleado: ");
+    scanf("%s", &nuevoEmp.apellidoNombre);
+
+    printf("Ingrese el cargo del empleado: ");
+    scanf("%s", &nuevoEmp.cargo);
+
+    printf("Ingrese la fecha de alta del empleado: ");
+    scanf("%d/%d/%d", &nuevoEmp.fechaAlta.dia, &nuevoEmp.fechaAlta.mes, &nuevoEmp.fechaAlta.anio);
+
+    printf("Ingrese la fecha de baja del empleado: ");
+    scanf("%d/%d/%d", &nuevoEmp.fechaBaja.dia, &nuevoEmp.fechaBaja.mes, &nuevoEmp.fechaBaja.anio);
+
+    fseek(archivo, 0, SEEK_END);
+    long tamTotal = ftell(archivo);
+    long cantidadRegistros = tamTotal / sizeof(tEmpleado);
+
+    //en arbol esta el indice, no el dato completo
+    tIndice indiceBuscar;
+    strcpy(indiceBuscar.legajo, nuevoEmp.legajo);
+    indiceBuscar.nroRegistro = cantidadRegistros;
+
+    int buscarIndice = buscarEnArbol(arbol, &indiceBuscar.legajo, sizeof(tEmpleado), cmp);
+
+    if(!buscarIndice){
+        fwrite(&nuevoEmp, sizeof(tEmpleado), 1, archivo);
+        insertarRecArbolBinBusqueda(arbol, &indiceBuscar, sizeof(tEmpleado), cmp);
+    } else {
+        printf("El elemento ya esta en el arbol, no admite duplicados.");
+    }
+
+    fclose(archivo);
+}
+
+/*- Ingresar la clave, para buscarla en el árbol y con el número de registro muestre la
+información del archivo.*/
+void buscarElemento(const char* filename, tArbol* arbol, int(*cmp)(const void*, const void*)){
+    FILE* archivo = fopen(filename, "rb");
+    if(!archivo){
+        printf("Error al abrir el archivo para su lectura.\n");
+        return;
+    }
+
+    tIndice indice;
+    tEmpleado empleado;
+
+    do{
+        printf("Ingrese la clave(legajo) a buscar: ");
+        scanf("%s", &indice.legajo);
+        int hallar = buscarEnArbol(arbol, &indice.legajo, sizeof(tIndice), cmp);
+
+        if(hallar == 1){
+            fseek(archivo, sizeof(tEmpleado) * (indice.nroRegistro), SEEK_CUR);
+            fread(&empleado, sizeof(tEmpleado), 1, archivo);
+            printf("Empleado encontrado:\n");
+            mostrarEmpleadoArchivo(&empleado);
+        } else {
+            printf("La clave (legajo) no existe en el archivo.");
+        }
+
+    }while(strcmp(indice.legajo, "0") != 0);
+
+    fclose(archivo);
+}
+
+void mostrarInformacionEnOrden(const char* filename, tArbol* arbol){
+    FILE* archivo = fopen(filename, "rb");
+    if(!archivo)
+    {
+        printf("Error al abrir el archivo para su lectura.\n");
+        return;
+    }
+
+    mostrarInformacion(archivo, arbol);
+
+    fclose(archivo);
+}
+
+void mostrarInformacion(FILE* archivo, tArbol* arbol){
+
+    tIndice indice;
+
+
+    fseek(archivo, 0, SEEK_END);
+    int tamTotal = ftell(archivo);
+    int cantElementos = tamTotal / sizeof(tIndice);
+    rewind(archivo);
+
+    fseek(archivo, )
+
+
+    mostrarInformacion(archivo, arbol);
+}
+
 
 /** FUNCIONES DE ARCHIVOS **/
 void crearArchivo(char* filename){

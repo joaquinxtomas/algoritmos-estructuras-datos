@@ -19,3 +19,23 @@
 1780195980 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/Arboles/Ejercicio6_2/funciones.c
 	"funciones.h"
 
+1780354374 source:c:\users\jtppa\onedrive\documents\materias\algoritmos-estructuras-datos\arboles\tda_arbol\arbol.c
+	"arbol.h"
+
+1780352074 c:\users\jtppa\onedrive\documents\materias\algoritmos-estructuras-datos\arboles\tda_arbol\arbol.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1780355025 source:c:\users\jtppa\onedrive\documents\materias\algoritmos-estructuras-datos\arboles\ejercicio6_2\funciones.c
+	"funciones.h"
+
+1780354359 c:\users\jtppa\onedrive\documents\materias\algoritmos-estructuras-datos\arboles\ejercicio6_2\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../TDA_Arbol/arbol.h"
+
+1780356714 source:c:\users\jtppa\onedrive\documents\materias\algoritmos-estructuras-datos\arboles\ejercicio6_2\main.c
+	"funciones.h"
+
