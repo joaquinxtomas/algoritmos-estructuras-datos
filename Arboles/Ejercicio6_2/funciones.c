@@ -69,11 +69,11 @@ void agregarRegistro(const char* filename, tArbol* arbol, int(*cmp)(const void*,
     strcpy(indiceBuscar.legajo, nuevoEmp.legajo);
     indiceBuscar.nroRegistro = cantidadRegistros;
 
-    int buscarIndice = buscarEnArbol(arbol, &indiceBuscar.legajo, sizeof(tEmpleado), cmp);
+    int buscarIndice = buscarEnArbol(arbol, &indiceBuscar, sizeof(tIndice), cmp);
 
     if(!buscarIndice){
         fwrite(&nuevoEmp, sizeof(tEmpleado), 1, archivo);
-        insertarRecArbolBinBusqueda(arbol, &indiceBuscar, sizeof(tEmpleado), cmp);
+        insertarRecArbolBinBusqueda(arbol, &indiceBuscar, sizeof(tIndice), cmp);
     } else {
         printf("El elemento ya esta en el arbol, no admite duplicados.");
     }
@@ -96,10 +96,10 @@ void buscarElemento(const char* filename, tArbol* arbol, int(*cmp)(const void*, 
     do{
         printf("Ingrese la clave(legajo) a buscar: ");
         scanf("%s", &indice.legajo);
-        int hallar = buscarEnArbol(arbol, &indice.legajo, sizeof(tIndice), cmp);
+        int hallar = buscarEnArbol(arbol, &indice, sizeof(tIndice), cmp);
 
         if(hallar == 1){
-            fseek(archivo, sizeof(tEmpleado) * (indice.nroRegistro), SEEK_CUR);
+            fseek(archivo, sizeof(tEmpleado) * (indice.nroRegistro), SEEK_SET);
             fread(&empleado, sizeof(tEmpleado), 1, archivo);
             printf("Empleado encontrado:\n");
             mostrarEmpleadoArchivo(&empleado);
@@ -112,7 +112,11 @@ void buscarElemento(const char* filename, tArbol* arbol, int(*cmp)(const void*, 
     fclose(archivo);
 }
 
-void mostrarInformacionEnOrden(const char* filename, tArbol* arbol){
+void mostrarInformacionArchivoArbol(
+                               const char* filename,
+                               tArbol* arbol,
+                               void(*recorrer)(const tArbol*, unsigned, void*,
+                                               void(*accion)(void*, unsigned, unsigned, void*))){
     FILE* archivo = fopen(filename, "rb");
     if(!archivo)
     {
@@ -120,27 +124,60 @@ void mostrarInformacionEnOrden(const char* filename, tArbol* arbol){
         return;
     }
 
-    mostrarInformacion(archivo, arbol);
+    //para recorrer se llama a mostrarInformacionEnOrden
+    recorrer(arbol, 0, archivo, mostrarDesdeArchivoArbol);
 
     fclose(archivo);
 }
 
-void mostrarInformacion(FILE* archivo, tArbol* arbol){
+void mostrarDesdeArchivoArbol(void* info, unsigned tam, unsigned n, void* params){
+    tIndice* indice = (tIndice*)info;
+    FILE* archivo = (FILE*)params;
+    tEmpleado empleado;
 
-    tIndice indice;
-
-
-    fseek(archivo, 0, SEEK_END);
-    int tamTotal = ftell(archivo);
-    int cantElementos = tamTotal / sizeof(tIndice);
-    rewind(archivo);
-
-    fseek(archivo, )
-
-
-    mostrarInformacion(archivo, arbol);
+    fseek(archivo, sizeof(tEmpleado) * indice->nroRegistro, SEEK_SET);
+    fread(&empleado, sizeof(tEmpleado), 1, archivo);
+    mostrarEmpleadoArchivo(&empleado);
 }
 
+void asignarFechaBaja(const char* filename, tArbol* arbol){
+    FILE* archivo = fopen(filename, "r+b");
+    if(!archivo){
+        printf("Error al abrir el archivo para su actualización.");
+        return;
+    }
+
+    tIndice indice;
+    tEmpleado empleado;
+
+    //arbol ya tiene los indices
+    printf("Ingrese el legajo del empleado a actualizar: ");
+    scanf("%s", &indice.legajo);
+
+    int hallar = buscarEnArbol(arbol, &indice, sizeof(tIndice), compararLegajos);
+    if(hallar){
+        fseek(archivo, sizeof(tEmpleado) * indice.nroRegistro, SEEK_SET);
+        fread(&empleado, sizeof(tEmpleado), 1, archivo);
+        printf("Empleado hallado: \n");
+        mostrarEmpleadoArchivo(&empleado);
+
+        if(empleado.fechaBaja.dia == 0 && empleado.fechaBaja.mes == 0 && empleado.fechaBaja.anio == 0)
+        {
+            printf("\nIngrese la fecha de baja (dd/mm/aaaa): ");
+            scanf("%d/%d/%d", &empleado.fechaBaja.dia, &empleado.fechaBaja.mes, &empleado.fechaBaja.anio);
+            fseek(archivo, sizeof(tEmpleado) * indice.nroRegistro, SEEK_SET);
+            fwrite(&empleado, sizeof(tEmpleado), 1, archivo);
+        } else {
+            printf("El empleado ya tiene una fecha de baja asignada.\n");
+            return;
+        }
+    }else{
+        printf("El legajo no existe en el archivo.\n");
+        return;
+    }
+    fclose(archivo);
+
+}
 
 /** FUNCIONES DE ARCHIVOS **/
 void crearArchivo(char* filename){

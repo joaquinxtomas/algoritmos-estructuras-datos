@@ -31,11 +31,22 @@ int main()
 
     printf("\nARBOL SIN AGREGAR NADA\n");
     recorrerPreOrdenRecArbolBinBusqueda(&arbol, 0, NULL, mostrarIndiceEmpleadoArbol);
+    printf("----------------------------------------------------------------------\n");
     /*agregarRegistro(filename, &arbol,  compararLegajos);
     printf("\nARBOL CON UN REGISTRO MÁS\n");
     recorrerPreOrdenRecArbolBinBusqueda(&arbol, 0 , NULL, mostrarIndiceEmpleadoArbol);
     */
 
     //buscarElemento(filename, &arbol, compararLegajos);
+
+    //mostrarInformacionArchivoArbol(filename, &arbol, recorrerEnOrdenRecArbolBinBusqueda);
+    //mostrarInformacionArchivoArbol(filename, &arbol, recorrerPreOrdenRecArbolBinBusqueda);
+    //mostrarInformacionArchivoArbol(filename, &arbol, recorrerPosOrdenRecArbolBinBusqueda);
+
+    asignarFechaBaja(filename, &arbol);
+    mostrarArchivo(filename, sizeof(tEmpleado), mostrarEmpleadoArchivo);
+    printf("---------------------------------------------------------\n");
+    printf("\nARBOL SIN AGREGAR NADA\n");
+    recorrerPreOrdenRecArbolBinBusqueda(&arbol, 0, NULL, mostrarIndiceEmpleadoArbol);
 
 }

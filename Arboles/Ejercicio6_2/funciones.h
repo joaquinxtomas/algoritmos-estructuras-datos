@@ -34,5 +34,11 @@ int compararLegajos(const void* dato1, const void* dato2);
 void mostrarIndiceEmpleadoArbol(void* info, unsigned tam, unsigned n, void* params);
 
 void agregarRegistro(const char* filename, tArbol* arbol, int(*cmp)(const void*, const void*));
+void buscarElemento(const char* filename, tArbol* arbol, int(*cmp)(const void*, const void*));
+
+void mostrarInformacionArchivoArbol(const char* filename,tArbol* arbol,void(*recorrer)(const tArbol*, unsigned, void*,void(*accion)(void*, unsigned, unsigned, void*)));
+void mostrarDesdeArchivoArbol(void* info, unsigned tam, unsigned n, void* params);
+
+void asignarFechaBaja(const char* filename, tArbol* arbol);
 
 #endif // FUNCIONES_H_INCLUDED
