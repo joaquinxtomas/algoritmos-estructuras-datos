@@ -176,6 +176,44 @@ void asignarFechaBaja(const char* filename, tArbol* arbol){
         return;
     }
     fclose(archivo);
+}
+
+void generarArchivoOrdenado(const char* filenameOriginal, const char* filenameOrdenado, tArbol* arbol){
+    FILE* archivoOriginal = fopen(filenameOriginal, "rb");
+    if(!archivoOriginal){
+        printf("Error al abrir el archivo original para su escritura.");
+        return;
+    }
+
+    FILE* archivoNuevo = fopen(filenameOrdenado, "wb");
+    if(!archivoNuevo){
+        printf("Error al abrir el archivo para su escritura");
+        fclose(archivoOriginal);
+        return;
+    }
+
+    tParamsArchivos params;
+    params.archivoOriginal = archivoOriginal;
+    params.archivoNuevo = archivoNuevo;
+
+
+    recorrerEnOrdenRecArbolBinBusqueda(arbol, 0, &params, escribirArchivo);
+
+    fclose(archivoOriginal);
+    fclose(archivoNuevo);
+}
+
+void escribirArchivo(void* info, unsigned tam, unsigned n, void* params){
+    tParamsArchivos* archivos = (tParamsArchivos*)params;
+    FILE* archivoOriginal = archivos->archivoOriginal;
+    FILE* archivoNuevo = archivos->archivoNuevo;
+
+    tIndice* indice = (tIndice*)info;
+    tEmpleado empleado;
+
+    fseek(archivoOriginal, sizeof(tEmpleado) * indice->nroRegistro, SEEK_SET);
+    fread(&empleado, sizeof(tEmpleado), 1, archivoOriginal);
+    fwrite(&empleado, sizeof(tEmpleado),1, archivoNuevo);
 
 }
 

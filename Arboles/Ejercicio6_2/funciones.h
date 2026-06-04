@@ -25,6 +25,11 @@ typedef struct {
     int nroRegistro; //posicion en el archivo
 }tIndice;
 
+typedef struct {
+    FILE* archivoOriginal;
+    FILE* archivoNuevo;
+} tParamsArchivos;
+
 void crearArchivo(char* filename);
 void mostrarArchivo(char* filename, unsigned tam, void(*accion)(const void*));
 void mostrarEmpleadoArchivo(const void* dato);
@@ -40,5 +45,8 @@ void mostrarInformacionArchivoArbol(const char* filename,tArbol* arbol,void(*rec
 void mostrarDesdeArchivoArbol(void* info, unsigned tam, unsigned n, void* params);
 
 void asignarFechaBaja(const char* filename, tArbol* arbol);
+
+void generarArchivoOrdenado(const char* filenameOriginal, const char* filenameOrdenado, tArbol* arbol);
+void escribirArchivo(void* info, unsigned tam, unsigned n, void* params);
 
 #endif // FUNCIONES_H_INCLUDED

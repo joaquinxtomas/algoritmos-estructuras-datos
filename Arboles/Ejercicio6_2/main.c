@@ -21,17 +21,18 @@ Al terminar el programa, debe generar un nuevo archivo ordenado por la clave
 int main()
 {
     const char* filename = "empleados.bin";
+    const char* filenameOrdenado = "empleados_ordenados.bin";
     crearArchivo(filename);
-    printf("ARCHIVO\n");
+    printf("ARCHIVO ORIGINAL\n");
     mostrarArchivo(filename, sizeof(tEmpleado), mostrarEmpleadoArchivo);
     printf("---------------------------------------------------------\n");
     tArbol arbol;
     crearArbol(&arbol);
     cargarArbolArchivo(&arbol, filename);
 
-    printf("\nARBOL SIN AGREGAR NADA\n");
-    recorrerPreOrdenRecArbolBinBusqueda(&arbol, 0, NULL, mostrarIndiceEmpleadoArbol);
-    printf("----------------------------------------------------------------------\n");
+    //printf("\nARBOL SIN AGREGAR NADA\n");
+    //recorrerPreOrdenRecArbolBinBusqueda(&arbol, 0, NULL, mostrarIndiceEmpleadoArbol);
+    //printf("----------------------------------------------------------------------\n");
     /*agregarRegistro(filename, &arbol,  compararLegajos);
     printf("\nARBOL CON UN REGISTRO MÁS\n");
     recorrerPreOrdenRecArbolBinBusqueda(&arbol, 0 , NULL, mostrarIndiceEmpleadoArbol);
@@ -43,10 +44,18 @@ int main()
     //mostrarInformacionArchivoArbol(filename, &arbol, recorrerPreOrdenRecArbolBinBusqueda);
     //mostrarInformacionArchivoArbol(filename, &arbol, recorrerPosOrdenRecArbolBinBusqueda);
 
-    asignarFechaBaja(filename, &arbol);
-    mostrarArchivo(filename, sizeof(tEmpleado), mostrarEmpleadoArchivo);
+    //asignarFechaBaja(filename, &arbol);
+    //mostrarArchivo(filename, sizeof(tEmpleado), mostrarEmpleadoArchivo);
+    //printf("---------------------------------------------------------\n");
+    //printf("\nARBOL SIN AGREGAR NADA\n");
+
+    printf("ARBOL EN ORDEN");
+    recorrerEnOrdenRecArbolBinBusqueda(&arbol, 0, NULL, mostrarIndiceEmpleadoArbol);
     printf("---------------------------------------------------------\n");
-    printf("\nARBOL SIN AGREGAR NADA\n");
-    recorrerPreOrdenRecArbolBinBusqueda(&arbol, 0, NULL, mostrarIndiceEmpleadoArbol);
+    generarArchivoOrdenado(filename, filenameOrdenado, &arbol);
+    printf("---------------------------------------------------------\n");
+    printf("ARCHIVO ORDENADO");
+    mostrarArchivo(filenameOrdenado, sizeof(tEmpleado), mostrarEmpleadoArchivo);
+
 
 }
