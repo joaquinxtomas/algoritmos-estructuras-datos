@@ -77,11 +77,36 @@ void ordenarLista(tLista* lista, int(*cmp)(const void*, const void*)){
                 aux->tam = aux->sig->tam;
                 aux->sig->info = tmpInfo;
                 aux->sig->tam = tmpTam;
-                ordenaro = 0;
+                ordenado = 0;
             }
             aux = aux->sig;
         }
     }
+}
+
+/*
+Resuelva la busqueda por la clave, con eliminacion o no del nodo, recuperando la informacion en caso de encontrarse la clave
+*/
+int buscar(tLista* lista, void* dato, unsigned tam, int(*cmp)(const void*, const void*)){
+    tNodo* actual = *lista;
+    if(!actual){
+        return 0; //no hay nada que buscar
+    }
+
+    while(actual->ant){
+        actual = actual->ant;
+    }
+
+    while(actual){
+        if(cmp(actual->info, dato) == 0){
+            memcpy(dato, actual->info, tam);
+            return 1; //encontrado
+        }
+        actual = actual->sig;
+    }
+
+    return 0; //no encontrado
+
 }
 
 //Funciones extra - se utilizan para la resolución de las consignas pero no son la función principal.

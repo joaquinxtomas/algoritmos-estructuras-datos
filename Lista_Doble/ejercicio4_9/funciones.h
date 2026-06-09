@@ -1,7 +1,7 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include "../TDA_Lista/ListaDoble.h"
 
@@ -12,9 +12,9 @@ typedef struct {
 }tPersona;
 
 
-void mostrarPersona(const void* dato);
-int comparaDni(const void* dato1, const void* dato2);
-int insertarEnOrden(tLista* lista, const void* dato, unsigned tam, int(*cmp)(const void*, const void*));
+tLista map2(tLista* lista, unsigned tam, void(*funcion)(void*));
+void sumaDni(void* dato);
 void insertarPersonasLista(tLista* lista, int(*insertar)(tLista*, void*, unsigned));
-int buscar(tLista* lista, void* dato, unsigned tam, int(*cmp)(const void*, const void*));
+void mostrarPersona(const void* dato);
+
 #endif // FUNCIONES_H_INCLUDED
