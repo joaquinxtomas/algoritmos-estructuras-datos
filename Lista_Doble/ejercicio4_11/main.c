@@ -1,8 +1,21 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "funciones.h"
 
 int main()
 {
-    printf("Hello world!\n");
-    return 0;
+
+    tLista lista;
+    crearLista(&lista);
+
+    insertarNumLista(&lista, insertarAlComienzo);
+
+    printf("LISTA ANTES DE REDUCE\n");
+    mostrarDeDerIzq(&lista, mostrarNumero);
+
+    printf("\nLISTA NUEVA DESPUES DE REDUCE\n");
+    tLista listaReducida = reduce(&lista, sizeof(int), sumar);
+    mostrarDeDerIzq(&listaReducida, mostrarNumero);
+
+    printf("\nLISTA ORIGINAL LUEGO DE REDUCE\n");
+    mostrarDeDerIzq(&lista, mostrarNumero);
+
 }

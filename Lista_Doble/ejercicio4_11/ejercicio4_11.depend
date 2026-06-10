@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1780782148 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/Lista_Doble/TDA_Lista/ListaDoble.c
+	"ListaDoble.h"
+
+1780777330 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/Lista_Doble/TDA_Lista/ListaDoble.h
+	<stdlib.h>
+	<stdio.h>
+
+1781058244 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/Lista_Doble/ejercicio4_11/main.c
+	"funciones.h"
+
+1781058220 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/Lista_Doble/ejercicio4_11/funciones.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../TDA_Lista/ListaDoble.h"
+
+1781058330 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/Lista_Doble/ejercicio4_11/funciones.c
+	"funciones.h"
+
