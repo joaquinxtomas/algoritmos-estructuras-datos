@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1781445597 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Cola/ejercicio3_5/main.c
+	"funciones.h"
+
+1781446100 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Cola/ejercicio3_5/funciones.h
+	"../TDA_Cola/TDA_Cola.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<unistd.h>
+
+1781446441 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Cola/TDA_Cola/TDA_Cola.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1781445729 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Cola/TDA_Cola/TDA_Cola.c
+	"TDA_Cola.h"
+
+1781449784 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/TDA Cola/ejercicio3_5/funciones.c
+	"funciones.h"
+
