@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1782004611 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/MODELOS DE PARCIAL/parcial_051125/tda_pila.c
+	"tda_pila.h"
+
+1782008765 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/MODELOS DE PARCIAL/parcial_051125/tda_pila.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1782008629 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/MODELOS DE PARCIAL/parcial_051125/main.c
+	"tda_pila.h"
+
