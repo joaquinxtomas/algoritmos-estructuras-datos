@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1782140341 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL/parcial_051123/main.c
+	"tda_arbol.h"
+	"funciones.h"
+
+1782138741 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL/parcial_051123/tda_arbol.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1782141282 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL/parcial_051123/funciones.h
+	<stdio.h>
+	<stdlib.h>
+	"tda_arbol.h"
+
+1782141926 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL/parcial_051123/funciones.c
+	"funciones.h"
+
+1782138722 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL/parcial_051123/tda_arbol.c
+	"tda_arbol.h"
+
