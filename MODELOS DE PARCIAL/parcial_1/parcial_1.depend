@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1782527271 source:c:\users\usuario\documents\materias\algoritmos-estructuras-datos\modelos de parcial\parcial_1\funciones.c
+	"funciones.h"
+
+1782526606 c:\users\usuario\documents\materias\algoritmos-estructuras-datos\modelos de parcial\parcial_1\funciones.h
+	"tda_pila.h"
+
+1782518336 c:\users\usuario\documents\materias\algoritmos-estructuras-datos\modelos de parcial\parcial_1\tda_pila.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1782526640 source:c:\users\usuario\documents\materias\algoritmos-estructuras-datos\modelos de parcial\parcial_1\main.c
+	"funciones.h"
+
+1782524095 source:c:\users\usuario\documents\materias\algoritmos-estructuras-datos\modelos de parcial\parcial_1\tda_pila.c
+	"tda_pila.h"
+
