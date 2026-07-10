@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1783623351 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/3. Parcial - Recuperatorio/alumno.c
+	"alumno.h"
+
+1783623773 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/3. Parcial - Recuperatorio/alumno.h
+	"tLista.h"
+	<time.h>
+	<ctype.h>
+
+1783610757 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/3. Parcial - Recuperatorio/tLista.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1783623603 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/3. Parcial - Recuperatorio/main.c
+	"tLista.h"
+	"alumno.h"
+
+1783617631 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/3. Parcial - Recuperatorio/tLista.c
+	"tLista.h"
+
