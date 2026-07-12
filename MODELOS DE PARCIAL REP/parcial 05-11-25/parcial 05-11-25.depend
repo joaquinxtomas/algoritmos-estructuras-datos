@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1783873237 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/parcial 05-11-25/main.c
+	"pila.h"
+
+1783873183 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/parcial 05-11-25/pila.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+
+1783873126 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/parcial 05-11-25/pila.c
+	"pila.h"
+

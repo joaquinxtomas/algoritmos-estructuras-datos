@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1783796693 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/2. Parcial - Ferreteria/arbol.c
+	"arbol.h"
+
+1783789818 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/2. Parcial - Ferreteria/arbol.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1783802434 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/2. Parcial - Ferreteria/cola.c
+	"cola.h"
+
+1783800135 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/2. Parcial - Ferreteria/cola.h
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+
+1783803197 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/2. Parcial - Ferreteria/main.c
+	"productos.h"
+	"cola.h"
+
+1783796509 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/2. Parcial - Ferreteria/productos.h
+	"arbol.h"
+
+1783796434 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/2. Parcial - Ferreteria/productos.c
+	"productos.h"
+
