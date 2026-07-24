@@ -1,13 +1,13 @@
 # depslib dependency file v1.0
-1783895758 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/parcial 05-11-23/lista.c
+1783952749 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/parcial 05-11-23/lista.c
 	"lista.h"
 
-1783892049 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/parcial 05-11-23/lista.h
+1783952419 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/parcial 05-11-23/lista.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1783895140 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/parcial 05-11-23/main.c
+1783952803 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/MODELOS DE PARCIAL REP/parcial 05-11-23/main.c
 	"funciones.h"
 	"lista.h"
 

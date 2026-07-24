@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1784584820 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/2. Final/dato.c
+	"dato.h"
+
+1784584285 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/2. Final/dato.h
+	"arbol.h"
+
+1784584914 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/2. Final/arbol.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1784584883 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/2. Final/main.c
+	"dato.h"
+
+1784584897 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/2. Final/arbol.c
+	"arbol.h"
+

@@ -19,5 +19,7 @@ int insertarEnPodio(tLista* lista, void* dato, unsigned tam, int(*cmp)(const voi
 int insertarAlFinal(tLista* lista, void* dato, unsigned tam);
 int sacarDelFinal(tLista* lista, void* dato, unsigned tam);
 int sacarDelInicio(tLista* lista, void* dato, unsigned tam);
+int insertarOrdenado(tLista* lista, void* dato, unsigned tam, int(*cmp)(const void*, const void*));
+void recortarPodio(tLista* lista, int n, int(*cmp)(const void*, const void*));
 
 #endif // LISTA_H_INCLUDED

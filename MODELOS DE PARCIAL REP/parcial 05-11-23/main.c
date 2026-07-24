@@ -19,7 +19,7 @@ int main()
         return 0;
     }
 
-    //generarLote(filename);
+    generarLote(filename);
     //mostrarArchivoBin(filename, sizeof(tProducto), mostrarProducto);
 
     tLista lista_top;

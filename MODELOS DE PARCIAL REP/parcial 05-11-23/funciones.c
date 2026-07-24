@@ -14,7 +14,7 @@ void generarLote(const char* filename){
         {"prod4", "descripcion4", 154, {18,7,2026}, 21},
         {"prod5", "descripcion5", 156, {16,2,2026}, 37},
         {"prod6", "descripcion6", 176, {17,9,2026}, 42},
-        {"prod7", "descripcion7", 125, {26,7,2026}, 20}
+        {"prod7", "descripcion7", 125, {25,7,2026}, 70}
     };
 
     fwrite(productos, sizeof(tProducto), 7, archivo);
