@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1785089929 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/5. Final/pila.c
+	"pila.h"
+
+1785091008 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/5. Final/pila.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1785091163 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/5. Final/main.c
+	"pila.h"
+

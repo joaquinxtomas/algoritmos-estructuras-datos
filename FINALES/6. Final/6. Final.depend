@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1785096394 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/6. Final/lista.c
+	"lista.h"
+
+1785099896 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/6. Final/lista.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1785107748 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/6. Final/main.c
+	"tabla_de_puntos.h"
+
+1785107736 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/6. Final/tabla_de_puntos.h
+	"lista.h"
+
+1785108282 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/6. Final/tabla_de_puntos.c
+	"tabla_de_puntos.h"
+

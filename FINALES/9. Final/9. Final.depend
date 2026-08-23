@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1785165072 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/9. Final/lista.c
+	"lista.h"
+
+1785165110 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/9. Final/lista.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1785165085 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/9. Final/productos.c
+	"productos.h"
+
+1785160894 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/9. Final/productos.h
+	"lista.h"
+
+1785164538 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES/9. Final/main.c
+	"productos.h"
+
