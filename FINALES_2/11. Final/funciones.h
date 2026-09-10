@@ -32,6 +32,14 @@ typedef struct{
     char tipo;
 }tPaquete;
 
+typedef struct{
+    tCola urgentes;
+    tCola normales;
+    int contador;
+}tDestino;
+
+void proceso(const char* filename);
+void proceso2(const char* filename);
 
 
 

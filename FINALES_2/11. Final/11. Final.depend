@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1788040260 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES_2/11. Final/cola.c
+	"cola.h"
+
+1788038492 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES_2/11. Final/cola.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1788047006 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES_2/11. Final/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1788048053 source:/home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES_2/11. Final/funciones.c
+	"funciones.h"
+
+1788044175 /home/joaquinxtomas/Documentos/MATERIAS/Algoritmos y Estructuras de Datos/EJERCICIOS/FINALES_2/11. Final/funciones.h
+	"cola.h"
+

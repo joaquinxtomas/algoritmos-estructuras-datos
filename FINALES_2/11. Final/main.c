@@ -3,6 +3,6 @@
 
 int main()
 {
-    printf("Hello world!\n");
-    return 0;
+    const char* filename = "operaciones2.txt";
+    proceso2(filename);
 }
